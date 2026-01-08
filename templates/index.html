@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Document Q&A</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1> AI Document Q&A</h1>
+    <p class="subtitle">Upload a PDF and ask questions</p>
+
+    <!-- Upload -->
+    <div class="card">
+        <input type="file" id="pdfFile" accept=".pdf">
+        <button onclick="uploadPDF()">Upload PDF</button>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <!-- Ask -->
+    <div class="card">
+        <input type="text" id="question" placeholder="Ask something about the document">
+        <button onclick="askQuestion()">Ask</button>
+    </div>
+
+    <!-- Answer -->
+    <div class="card answer-box">
+        <h3>Answer</h3>
+        <p id="answer">Waiting for question...</p>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
